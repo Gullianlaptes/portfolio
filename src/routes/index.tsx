@@ -47,15 +47,13 @@ function Index() {
             </div>
             
             <h1 className="mb-6 font-display text-5xl font-bold leading-tight md:text-7xl">
-              <span className="text-foreground">Étudiant</span>
+              <span className="text-foreground">LAPTES</span>
               <br />
-              <span className="text-gradient">Développeur</span>
+              <span className="text-gradient">Gullian</span>
             </h1>
             
             <p className="mx-auto mb-10 max-w-xl text-lg text-muted-foreground">
-              Passionné par le développement et les systèmes informatiques. 
-              En formation BTS SIO, je construis des compétences solides pour 
-              répondre aux défis numériques d'aujourd'hui.
+              En formation BTS SIO depuis 2024, j'essaie d'acquérir des compétences pour répondre aux attentes d'un technicien supérieure en informatique.
             </p>
             
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -69,7 +67,7 @@ function Index() {
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 font-display text-sm font-semibold text-foreground transition-all hover:border-primary/50"
               >
-                Me contacter
+                Mes contacts
               </Link>
             </div>
           </motion.div>
