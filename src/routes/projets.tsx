@@ -25,14 +25,6 @@ const projets = [
     competences: ["Patrimoine informatique", "Incidents & assistance"],
   },
   {
-    title: "Site vitrine d'entreprise",
-    period: "Jan 2025 — Mars 2025",
-    context: "Réalisation en formation",
-    description: "Conception et développement d'un site web responsive pour une entreprise fictive. Optimisation SEO et intégration de données dynamiques.",
-    tags: ["WordPress", "SEO", "Responsive", "PHP"],
-    competences: ["Présence en ligne", "Mode projet"],
-  },
-  {
     title: "Déploiement infrastructure réseau",
     period: "Stage 1ère année",
     context: "Réalisation en milieu professionnel",
