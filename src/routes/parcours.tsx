@@ -17,6 +17,13 @@ export const Route = createFileRoute("/parcours")({
 
 const timeline = [
   {
+    icon: <Award className="h-5 w-5" />,
+    year: "2023",
+    title: "Baccalauréat",
+    location: "Lycée",
+    description: "Obtention du baccalauréat, première étape vers la formation en informatique.",
+  },
+  {
     icon: <GraduationCap className="h-5 w-5" />,
     year: "2023 — 2025",
     title: "BTS SIO — Option SLAM / SISR",
@@ -36,13 +43,6 @@ const timeline = [
     title: "Stage en entreprise — 2ème année",
     location: "Entreprise",
     description: "Stage de 6 semaines avec des missions plus avancées. Participation active à des projets d'équipe et prise d'autonomie.",
-  },
-  {
-    icon: <Award className="h-5 w-5" />,
-    year: "2023",
-    title: "Baccalauréat",
-    location: "Lycée",
-    description: "Obtention du baccalauréat, première étape vers la formation en informatique.",
   },
 ];
 
