@@ -25,7 +25,7 @@ const blocs = [
   {
     icon: <HeadphonesIcon className="h-6 w-6" />,
     title: "Répondre aux incidents et demandes",
-    description: "Collecter, suivre et traiter les demandes d'assistance concernant les services réseau, système et applicatifs.",
+    description: "Collecter, suivre et traiter les demandes d'assistance concernant les services réseau, système.",
     skills: ["Support N1/N2", "Ticketing", "Diagnostic", "Résolution"],
   },
   {
