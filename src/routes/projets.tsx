@@ -26,10 +26,10 @@ const projets = [
   },
   {
     title: "Déploiement infrastructure réseau",
-    period: "Stage 1ère année",
+    period: "Alternance sur les d2ans ",
     context: "Réalisation en milieu professionnel",
-    description: "Participation au déploiement d'une infrastructure réseau. Configuration de services, tests d'intégration et documentation technique.",
-    tags: ["Windows Server", "Active Directory", "DHCP", "DNS"],
+    description: "Participation a la migration de tout les équipements informatique et utilisateur dans le nouveau domaine  après rachats de l'entreprise . Configuration de services, tests d'intégration et documentation technique.",
+    tags: ["Windows Server\n", "Active Directory\n", "DHCP", "\n"],
     competences: ["Services informatiques", "Patrimoine informatique"],
   },
 ];
@@ -78,9 +78,7 @@ function ProjetsPage() {
             </motion.article>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm text-muted-foreground">
-          💡 Ces projets sont des exemples. Personnalise-les avec tes vraies réalisations !
-        </p>
+        <p className="mt-8 text-center text-sm text-muted-foreground">{"\n"}</p>
       </div>
     </div>
   );
