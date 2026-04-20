@@ -32,6 +32,14 @@ const projets = [
     tags: ["Windows Server\n", "Active Directory\n", "DHCP", "\n"],
     competences: ["Services informatiques", "Patrimoine informatique"],
   },
+  {
+    title: "Nouveau projet",
+    period: "À compléter",
+    context: "Réalisation en milieu professionnel",
+    description: "Description du projet à compléter.",
+    tags: ["Tag 1", "Tag 2"],
+    competences: ["Compétence concernée"],
+  },
 ];
 
 function ProjetsPage() {
