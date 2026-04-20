@@ -31,8 +31,8 @@ const blocs = [
   {
     icon: <Globe className="h-6 w-6" />,
     title: "Développer la présence en ligne",
-    description: "Valoriser l'image de l'organisation sur les médias numériques, référencer et faire évoluer les sites web.",
-    skills: ["SEO", "CMS", "Intégration web", "Analytics"],
+    description: "Etant donné que ma spécialisation est le réseau informatique je peut répondre a cette compétence",
+    skills: [],
   },
   {
     icon: <FolderKanban className="h-6 w-6" />,
@@ -60,7 +60,7 @@ function CompetencesPage() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           title="Compétences BTS SIO"
-          subtitle="Les 6 blocs de compétences du référentiel BTS Services Informatiques aux Organisations que j'ai développés au cours de ma formation et de mes stages."
+          subtitle="Les 6 blocs de compétences du référentiel BTS Services Informatiques aux Organisations que j'ai développés au cours de ma formation en alternace."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {blocs.map((bloc, i) => (
