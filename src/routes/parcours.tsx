@@ -18,21 +18,21 @@ export const Route = createFileRoute("/parcours")({
 const timeline = [
   {
     icon: <Award className="h-5 w-5" />,
-    year: "2023",
+    year: "2022",
     title: "Baccalauréat",
     location: "Lycée",
-    description: "Obtention du baccalauréat, première étape vers la formation en informatique.",
+    description: "2 stage de 3  semaine chez Transacom : logistique gestion des stocke et préparation de matériel de télécommunication pour professionnel.",
   },
   {
     icon: <GraduationCap className="h-5 w-5" />,
-    year: "2023 — 2025",
-    title: "BTS SIO — Option SLAM / SISR",
-    location: "Centre de formation",
-    description: "Formation en Services Informatiques aux Organisations. Apprentissage du développement, de l'administration réseau et de la gestion de projets informatiques.",
+    year: "2024",
+    title: "Baccalauréat",
+    location: "Lycée",
+    description: "2 stages de 4 semaine chez LB Info : réparation et dépannage de matériel informatique et développement de site web.",
   },
   {
     icon: <Briefcase className="h-5 w-5" />,
-    year: "2024",
+    year: "2023",
     title: "Stage en entreprise — 1ère année",
     location: "Entreprise",
     description: "Stage de 6 semaines en milieu professionnel. Mise en pratique des compétences acquises en formation sur des projets réels.",
