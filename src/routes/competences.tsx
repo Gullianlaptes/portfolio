@@ -32,7 +32,7 @@ const blocs = [
     icon: <Globe className="h-6 w-6" />,
     title: "Développer la présence en ligne",
     description: "Etant donné que ma spécialisation est le réseau informatique je peut répondre a cette compétence",
-    skills: [],
+    skills: ["\n"],
   },
   {
     icon: <FolderKanban className="h-6 w-6" />,
