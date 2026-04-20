@@ -29,7 +29,7 @@ const projets = [
     period: "Alternance sur les d2ans ",
     context: "Réalisation en milieu professionnel",
     description: "Participation a la migration de tout les équipements informatique et utilisateur dans le nouveau domaine  après rachats de l'entreprise . Configuration de services, tests d'intégration et documentation technique.",
-    tags: ["Windows Server", "Active Directory", "DHCP", "\n"],
+    tags: ["Windows Server\n", "Active Directory\n", "DHCP", "\n"],
     competences: ["Services informatiques", "Patrimoine informatique"],
   },
 ];
