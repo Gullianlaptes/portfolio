@@ -24,21 +24,21 @@ const blocs = [
   },
   {
     icon: <HeadphonesIcon className="h-6 w-6" />,
-    title: "Répondre aux incidents et demandes",
+    title: "Répondre aux incidents et demandes dans l'entreprise",
     description: "Collecter, suivre et traiter les demandes d'assistance concernant les services réseau, système.",
     skills: ["Support N1/N2", "Ticketing", "Diagnostic", "Résolution"],
   },
   {
     icon: <Globe className="h-6 w-6" />,
-    title: "Développer la présence en ligne",
-    description: "Etant donné que ma spécialisation est le réseau informatique je peut répondre a cette compétence",
-    skills: ["\n"],
+    title: "Développer la présence en ligne\n\nEtant donné que ma spécialisation est le réseau informatique je peut répondre a cette compétence",
+    description: "",
+    skills: [],
   },
   {
     icon: <FolderKanban className="h-6 w-6" />,
     title: "Travailler en mode projet",
     description: "Analyser les objectifs, planifier les activités et évaluer les indicateurs de suivi d'un projet.",
-    skills: ["Agile", "Planification", "Gestion d'équipe", "\n"],
+    skills: ["Agile", "Planification", "Gestion d'équipe"],
   },
   {
     icon: <Rocket className="h-6 w-6" />,
@@ -48,8 +48,8 @@ const blocs = [
   },
   {
     icon: <BookOpen className="h-6 w-6" />,
-    title: "Organiser son développement professionnel",
-    description: "Mettre en place son environnement d'apprentissage, faire de la veille et gérer son identité professionnelle.",
+    title: "Organiser mon développement professionnel",
+    description: "Mettre en place mon environnement d'apprentissage, gérer mon identité professionnelle.",
     skills: ["Veille techno", "Autoformation", "Portfolio", "Identité pro"],
   },
 ];
