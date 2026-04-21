@@ -38,7 +38,7 @@ const blocs = [
     icon: <FolderKanban className="h-6 w-6" />,
     title: "Travailler en mode projet",
     description: "Analyser les objectifs, planifier les activités et évaluer les indicateurs de suivi d'un projet.",
-    skills: ["Agile", "Planification", "Gestion d'équipe", "KPI"],
+    skills: ["Agile", "Planification", "Gestion d'équipe", "\n"],
   },
   {
     icon: <Rocket className="h-6 w-6" />,
