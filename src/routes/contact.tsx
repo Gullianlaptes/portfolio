@@ -34,7 +34,7 @@ function ContactPage() {
             className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-3"
           >
             <Mail className="h-5 w-5 text-primary" />
-            <span className="font-display text-sm text-foreground">contact@example.com</span>
+            <a href="mailto:gullian.laptes@orange.fr" className="font-display text-sm text-foreground hover:text-primary transition-colors">gullian.laptes@orange.fr</a>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
