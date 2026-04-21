@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "../components/SectionHeading";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/contact")({
@@ -44,6 +44,15 @@ function ContactPage() {
           >
             <MapPin className="h-5 w-5 text-primary" />
             <span className="font-display text-sm text-foreground">France</span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-3"
+          >
+            <Phone className="h-5 w-5 text-primary" />
+            <a href="tel:+33672797964" className="font-display text-sm text-foreground hover:text-primary transition-colors">06 72 79 79 64</a>
           </motion.div>
         </div>
 
