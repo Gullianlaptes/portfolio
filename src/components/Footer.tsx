@@ -16,7 +16,7 @@ export function Footer() {
           </a>
         </div>
         <p className="font-display text-xs text-muted-foreground">
-          © 2025 — Portfolio BTS SIO. Tous droits réservés.
+           © 2026 — Portfolio BTS SIO. Tous droits réservés.
         </p>
       </div>
     </footer>
