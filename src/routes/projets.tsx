@@ -25,20 +25,20 @@ const projets = [
     competences: ["Patrimoine informatique", "Incidents & assistance"],
   },
   {
-    title: "Déploiement infrastructure réseau",
-    period: "Alternance sur les d2ans ",
+    title: "Migration de domaine",
+    period: "Alternance sur les 2 ans",
     context: "Réalisation en milieu professionnel",
     description: "Participation a la migration de tout les équipements informatique et utilisateur dans le nouveau domaine  après rachats de l'entreprise . Configuration de services, tests d'intégration et documentation technique.",
-    tags: ["Windows Server\n", "Active Directory\n", "DHCP", "\n"],
+    tags: ["Windows Server", "Active Directory", "DHCP"],
     competences: ["Services informatiques", "Patrimoine informatique"],
   },
   {
-    title: "Nouveau projet",
-    period: "À compléter",
+    title: "modélisation 3D",
+    period: "Aternance sur les 2 ans",
     context: "Réalisation en milieu professionnel",
-    description: "Description du projet à compléter.",
-    tags: ["Tag 1", "Tag 2"],
-    competences: ["Compétence concernée"],
+    description: "Les laborantins sont amener à transporter leur échantillons avec des portoirs, pour éviter l'achat de ceux-ci et réduire les dépenses on m'a attribué la tâche de les modéliser puis les imprimer en 3D sur mesure.",
+    tags: ["3D Fusion", "Creality"],
+    competences: ["Conception 3D"],
   },
 ];
 
