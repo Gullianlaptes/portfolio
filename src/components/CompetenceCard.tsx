@@ -21,7 +21,7 @@ export function CompetenceCard({ icon, title, description, skills, index }: Comp
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
         {icon}
       </div>
-      <h3 className="mb-2 font-display text-lg font-semibold text-foreground">{title}</h3>
+      <h3 className="mb-2 font-display font-semibold text-foreground text-sm">{title}</h3>
       <p className="mb-4 text-sm text-muted-foreground">{description}</p>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
