@@ -17,39 +17,39 @@ export const Route = createFileRoute("/parcours")({
 
 const timeline = [
   {
-    icon: <Award className="h-5 w-5" />,
-    year: "2022",
-    title: "Baccalauréat",
-    location: "Lycée",
-    description: "2 stage de 3  semaine chez Transacom : logistique gestion des stocke et préparation de matériel de télécommunication pour professionnel.",
-  },
-  {
-    icon: <GraduationCap className="h-5 w-5" />,
-    year: "2023",
-    title: "Stage en entreprise — Seconde",
-    location: "Lycée",
-    description: "2 stages de 4 semaine chez LB Info : réparation et dépannage de matériel informatique et développement de site web.",
-  },
-  {
     icon: <Briefcase className="h-5 w-5" />,
-    year: "2024",
-    title: "Stage en entreprise — Première",
-    location: "Lycée",
-    description: "2 stages de 4 semaine chez Seroo informatique : Réparation de matériel informatique et ventes de matériel informatique",
-  },
-  {
-    icon: <Briefcase className="h-5 w-5" />,
-    year: "2023",
-    title: "Stage en entreprise — Terminale",
-    location: "Lycée",
-    description: "Stage de 6 semaines en milieu professionnel. Mise en pratique des compétences acquises en formation sur des projets réels.",
+    year: "2024/2026",
+    title: "Alternance en entreprise",
+    location: "",
+    description: "2 ans au seins de l'entreprise ALS France : gestion du parc informatique , gestion des utilisateur dans un domaine, sécurité informatique",
   },
   {
     icon: <Briefcase className="h-5 w-5" />,
     year: "2024/2026",
-    title: "Alternance en entreprise",
-    location: "Bts",
+    title: "Stage en entreprise — Terminale",
+    location: "Lycée",
     description: "2 ans au seins de l'entreprise ALS France : gestion du parc informatique , gestion des utilisateur dans un domaine, sécurité informatique",
+  },
+  {
+    icon: <Briefcase className="h-5 w-5" />,
+    year: "2024",
+    title: "Stage en entreprise — Terminale",
+    location: "Lycée",
+    description: "2 stages de 4 semaine chez Seroo informatique : Réparation de matériel informatique et ventes de matériel informatique",
+  },
+  {
+    icon: <GraduationCap className="h-5 w-5" />,
+    year: "2023",
+    title: "Stage en entreprise — Première",
+    location: "Lycée",
+    description: "2 stages de 4 semaine chez LB Info : réparation et dépannage de matériel informatique et développement de site web.",
+  },
+  {
+    icon: <Award className="h-5 w-5" />,
+    year: "2022",
+    title: "Stage en entreprise — Seconde",
+    location: "Lycée",
+    description: "2 stage de 3 semaine chez Transacom : logistique gestion des stocke et préparation de matériel de télécommunication pour professionnel.",
   },
 ];
 
