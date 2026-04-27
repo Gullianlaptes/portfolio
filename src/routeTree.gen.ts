@@ -14,6 +14,7 @@ import { Route as ParcoursRouteImport } from './routes/parcours'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompetencesRouteImport } from './routes/competences'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CompetencesSlugRouteImport } from './routes/competences.$slug'
 
 const ProjetsRoute = ProjetsRouteImport.update({
   id: '/projets',
@@ -40,40 +41,67 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompetencesSlugRoute = CompetencesSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CompetencesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/competences': typeof CompetencesRoute
+  '/competences': typeof CompetencesRouteWithChildren
   '/contact': typeof ContactRoute
   '/parcours': typeof ParcoursRoute
   '/projets': typeof ProjetsRoute
+  '/competences/$slug': typeof CompetencesSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/competences': typeof CompetencesRoute
+  '/competences': typeof CompetencesRouteWithChildren
   '/contact': typeof ContactRoute
   '/parcours': typeof ParcoursRoute
   '/projets': typeof ProjetsRoute
+  '/competences/$slug': typeof CompetencesSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/competences': typeof CompetencesRoute
+  '/competences': typeof CompetencesRouteWithChildren
   '/contact': typeof ContactRoute
   '/parcours': typeof ParcoursRoute
   '/projets': typeof ProjetsRoute
+  '/competences/$slug': typeof CompetencesSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/competences' | '/contact' | '/parcours' | '/projets'
+  fullPaths:
+    | '/'
+    | '/competences'
+    | '/contact'
+    | '/parcours'
+    | '/projets'
+    | '/competences/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/competences' | '/contact' | '/parcours' | '/projets'
-  id: '__root__' | '/' | '/competences' | '/contact' | '/parcours' | '/projets'
+  to:
+    | '/'
+    | '/competences'
+    | '/contact'
+    | '/parcours'
+    | '/projets'
+    | '/competences/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/competences'
+    | '/contact'
+    | '/parcours'
+    | '/projets'
+    | '/competences/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CompetencesRoute: typeof CompetencesRoute
+  CompetencesRoute: typeof CompetencesRouteWithChildren
   ContactRoute: typeof ContactRoute
   ParcoursRoute: typeof ParcoursRoute
   ProjetsRoute: typeof ProjetsRoute
@@ -116,12 +144,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/competences/$slug': {
+      id: '/competences/$slug'
+      path: '/$slug'
+      fullPath: '/competences/$slug'
+      preLoaderRoute: typeof CompetencesSlugRouteImport
+      parentRoute: typeof CompetencesRoute
+    }
   }
 }
 
+interface CompetencesRouteChildren {
+  CompetencesSlugRoute: typeof CompetencesSlugRoute
+}
+
+const CompetencesRouteChildren: CompetencesRouteChildren = {
+  CompetencesSlugRoute: CompetencesSlugRoute,
+}
+
+const CompetencesRouteWithChildren = CompetencesRoute._addFileChildren(
+  CompetencesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CompetencesRoute: CompetencesRoute,
+  CompetencesRoute: CompetencesRouteWithChildren,
   ContactRoute: ContactRoute,
   ParcoursRoute: ParcoursRoute,
   ProjetsRoute: ProjetsRoute,

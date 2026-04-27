@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CompetenceCard } from "../components/CompetenceCard";
 import { SectionHeading } from "../components/SectionHeading";
-import { Server, HeadphonesIcon, Globe, FolderKanban, Rocket, BookOpen } from "lucide-react";
+import { blocs } from "../data/competences";
 
 export const Route = createFileRoute("/competences")({
   head: () => ({
@@ -14,45 +14,6 @@ export const Route = createFileRoute("/competences")({
   }),
   component: CompetencesPage,
 });
-
-const blocs = [
-  {
-    icon: <Server className="h-6 w-6" />,
-    title: "Gérer le patrimoine informatique",
-    description: "Recenser les ressources numériques, exploiter les référentiels, gérer les habilitations et les sauvegardes.",
-    skills: ["Inventaire", "Référentiels", "Habilitations", "Sauvegardes", "RGPD"],
-  },
-  {
-    icon: <HeadphonesIcon className="h-6 w-6" />,
-    title: "Répondre aux incidents et demandes dans l'entreprise",
-    description: "Collecter, suivre et traiter les demandes d'assistance concernant les services réseau, système.",
-    skills: ["Support N1/N2", "Ticketing", "Diagnostic", "Résolution"],
-  },
-  {
-    icon: <Globe className="h-6 w-6" />,
-    title: "Développer la présence en ligne\n\nEtant donné que ma spécialisation est le réseau informatique je peut répondre a cette compétence",
-    description: "",
-    skills: [],
-  },
-  {
-    icon: <FolderKanban className="h-6 w-6" />,
-    title: "Travailler en mode projet",
-    description: "Analyser les objectifs, planifier les activités et évaluer les indicateurs de suivi d'un projet.",
-    skills: ["Agile", "Planification", "Gestion d'équipe"],
-  },
-  {
-    icon: <Rocket className="h-6 w-6" />,
-    title: "Mettre à disposition un service informatique",
-    description: "Réaliser les tests d'intégration, déployer un service et accompagner les utilisateurs.",
-    skills: ["Déploiement", "Tests", "Documentation", "Formation"],
-  },
-  {
-    icon: <BookOpen className="h-6 w-6" />,
-    title: "Organiser mon développement professionnel",
-    description: "Mettre en place mon environnement d'apprentissage, gérer mon identité professionnelle.",
-    skills: ["Veille techno", "Autoformation", "Portfolio", "Identité pro"],
-  },
-];
 
 function CompetencesPage() {
   return (
