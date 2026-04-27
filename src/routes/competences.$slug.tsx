@@ -1,7 +1,7 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
-import { getBlocBySlug, type Bloc } from "../data/competences";
+import { getBlocBySlug } from "../data/competences";
 
 export const Route = createFileRoute("/competences/$slug")({
   head: ({ params }) => {
@@ -17,11 +17,6 @@ export const Route = createFileRoute("/competences/$slug")({
       ],
     };
   },
-  loader: ({ params }): Bloc => {
-    const bloc = getBlocBySlug(params.slug);
-    if (!bloc) throw notFound();
-    return bloc;
-  },
   notFoundComponent: () => (
     <div className="min-h-screen px-6 pt-28">
       <div className="mx-auto max-w-3xl text-center">
@@ -36,7 +31,21 @@ export const Route = createFileRoute("/competences/$slug")({
 });
 
 function CompetenceDetailPage() {
-  const bloc = Route.useLoaderData() as Bloc;
+  const { slug } = Route.useParams();
+  const bloc = getBlocBySlug(slug);
+
+  if (!bloc) {
+    return (
+      <div className="min-h-screen px-6 pt-28">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="mb-4 font-display text-2xl text-foreground">Compétence introuvable</h1>
+          <Link to="/competences" className="text-primary hover:underline">
+            ← Retour aux compétences
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen px-6 pb-20 pt-28">
