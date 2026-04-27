@@ -135,6 +135,6 @@ export const blocs: Bloc[] = [
   },
 ];
 
-export function getBlocBySlug(slug: string) {
+export function getBlocBySlug(slug: string): Bloc | undefined {
   return blocs.find((b) => b.slug === slug);
 }
