@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
-import { getBlocBySlug } from "../data/competences";
+import { getBlocBySlug, type Bloc } from "../data/competences";
 
 export const Route = createFileRoute("/competences/$slug")({
   head: ({ params }) => {
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/competences/$slug")({
       ],
     };
   },
-  loader: ({ params }) => {
+  loader: ({ params }): Bloc => {
     const bloc = getBlocBySlug(params.slug);
     if (!bloc) throw notFound();
     return bloc;
