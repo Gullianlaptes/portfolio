@@ -62,7 +62,11 @@ function CompetenceDetailPage() {
             {bloc.title}
           </h1>
 
-          <p className="mb-8 text-lg text-muted-foreground">{bloc.details.intro}</p>
+          <p className="mb-8 text-lg text-muted-foreground">
+            {bloc.details.intro || (
+              <span className="italic opacity-60">À compléter…</span>
+            )}
+          </p>
 
           <div className="mb-8 flex flex-wrap gap-2">
             {bloc.skills.map((skill) => (
@@ -79,28 +83,36 @@ function CompetenceDetailPage() {
             <h2 className="mb-4 font-display text-xl font-semibold text-foreground">
               Activités principales
             </h2>
-            <ul className="space-y-2">
-              {bloc.details.activites.map((a) => (
-                <li key={a} className="flex gap-3 text-sm text-muted-foreground">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                  {a}
-                </li>
-              ))}
-            </ul>
+            {bloc.details.activites.length > 0 ? (
+              <ul className="space-y-2">
+                {bloc.details.activites.map((a) => (
+                  <li key={a} className="flex gap-3 text-sm text-muted-foreground">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm italic text-muted-foreground opacity-60">À compléter…</p>
+            )}
           </section>
 
           <section className="rounded-xl border border-border bg-card p-6">
             <h2 className="mb-4 font-display text-xl font-semibold text-foreground">
               Mes réalisations
             </h2>
-            <ul className="space-y-2">
-              {bloc.details.realisations.map((r) => (
-                <li key={r} className="flex gap-3 text-sm text-muted-foreground">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                  {r}
-                </li>
-              ))}
-            </ul>
+            {bloc.details.realisations.length > 0 ? (
+              <ul className="space-y-2">
+                {bloc.details.realisations.map((r) => (
+                  <li key={r} className="flex gap-3 text-sm text-muted-foreground">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    {r}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm italic text-muted-foreground opacity-60">À compléter…</p>
+            )}
           </section>
         </motion.div>
       </div>
