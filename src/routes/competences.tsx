@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Outlet, createFileRoute, useLocation } from "@tanstack/react-router";
 import { CompetenceCard } from "../components/CompetenceCard";
 import { SectionHeading } from "../components/SectionHeading";
 import { blocs } from "../data/competences";
@@ -16,6 +16,12 @@ export const Route = createFileRoute("/competences")({
 });
 
 function CompetencesPage() {
+  const { pathname } = useLocation();
+
+  if (pathname !== "/competences") {
+    return <Outlet />;
+  }
+
   return (
     <div className="min-h-screen px-6 pb-20 pt-28">
       <div className="mx-auto max-w-6xl">
