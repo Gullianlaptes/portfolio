@@ -36,7 +36,7 @@ export const Route = createFileRoute("/competences/$slug")({
 });
 
 function CompetenceDetailPage() {
-  const bloc = Route.useLoaderData();
+  const bloc = Route.useLoaderData() as Bloc;
 
   return (
     <div className="min-h-screen px-6 pb-20 pt-28">
