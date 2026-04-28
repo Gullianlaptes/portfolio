@@ -22,7 +22,7 @@ export const blocs: Bloc[] = [
     description: "Recenser les ressources numériques, exploiter les référentiels, gérer les habilitations et les sauvegardes.",
     skills: ["Inventaire", "Référentiels", "Habilitations", "Sauvegardes", "RGPD"],
     details: {
-      intro: "Ce bloc consiste à maintenir le parc informatique d'une organisation : recenser le matériel et les logiciels, gérer les comptes et droits des utilisateurs, et garantir la disponibilité des données. C'est au cœur de mon alternance chez ALS France.",
+      intro: "Ce bloc consiste à maintenir le parc informatique d'une organisation : recenser le matériel et les logiciels, gérer les comptes et droits des utilisateurs, et garantir la disponibilité des données. Au cœur de mon alternance chez ALS France.",
       activites: [
         "Inventaire et suivi du matériel (postes, serveurs, périphériques, licences)",
         "Gestion des comptes et des habilitations dans un domaine Active Directory",
