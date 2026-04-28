@@ -127,7 +127,7 @@ export const blocs: Bloc[] = [
     details: {
       intro: "Ce bloc consiste à construire son parcours pro : faire de la veille, se former en autonomie et gérer son identité numérique. Mes stages successifs (Seconde, Première, Terminale) puis mon alternance m'ont permis de structurer ce développement.",
       activites: [
-        "Veille technologique régulière (réseau, systèmes, cybersécurité)",
+        "Veille technologique (réseau, systèmes, cybersécurité)",
         "Autoformation sur de nouveaux outils et concepts",
         "Construction et mise à jour d'un portfolio professionnel",
         "Gestion de l'identité numérique pro",
