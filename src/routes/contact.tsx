@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "../components/SectionHeading";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send, FileText, Download } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/contact")({
@@ -55,6 +55,26 @@ function ContactPage() {
             <a href="tel:+33672797964" className="font-display text-sm text-foreground hover:text-primary transition-colors">06 72 79 79 64</a>
           </motion.div>
         </div>
+
+        <motion.a
+          href="/cv.pdf"
+          download
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25 }}
+          className="mb-10 flex items-center justify-between gap-4 rounded-xl border border-primary/30 bg-gradient-to-r from-primary/10 to-primary/5 p-5 transition-all hover:border-primary/60 hover:shadow-lg"
+        >
+          <div className="flex items-center gap-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/15">
+              <FileText className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <p className="font-display text-base font-semibold text-foreground">Mon CV</p>
+              <p className="text-xs text-muted-foreground">Cliquez pour télécharger (PDF)</p>
+            </div>
+          </div>
+          <Download className="h-5 w-5 text-primary" />
+        </motion.a>
 
         {submitted ? (
           <motion.div
