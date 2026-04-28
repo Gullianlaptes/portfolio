@@ -17,10 +17,10 @@ export const Route = createFileRoute("/projets")({
 
 const projets = [
   {
-    title: "Projet de gestion de tickets",
+    title: "Creation d'un serveur de sauvegarde de doné et utilisateur",
     period: "Sept 2024 — Déc 2024",
     context: "Réalisation en formation",
-    description: "Développement d'une application de gestion de tickets d'incidents pour le service informatique. Mise en place d'un système de suivi et de priorisation des demandes.",
+    description: "Développement d'un server de sauvegarde de donées le service informatique. Mise en place d'un système de suivi et de priorisation des demandes.",
     tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
     competences: ["Patrimoine informatique", "Incidents & assistance"],
   },
