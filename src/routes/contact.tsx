@@ -19,6 +19,22 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
+  const handleCvDownload = async (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    const response = await fetch("/cv.pdf");
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = "cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="min-h-screen px-6 pb-20 pt-28">
       <div className="mx-auto max-w-2xl">
@@ -59,6 +75,7 @@ function ContactPage() {
         <motion.a
           href="/cv.pdf"
           download
+          onClick={handleCvDownload}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
