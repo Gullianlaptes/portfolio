@@ -92,7 +92,7 @@ export const blocs: Bloc[] = [
         "Travail collaboratif et communication d'équipe",
       ],
       realisations: [
-        "Projets en équipe pendant la formation BTS SIO",
+        "Projets pendant la formation BTS SIO",
         "Participation à des projets internes en alternance chez ALS France",
       ],
     },
