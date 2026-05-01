@@ -73,22 +73,6 @@ const projets = [
     },
   },
   {
-    title: "Nouveau projet",
-    period: "À compléter",
-    context: "Réalisation à compléter",
-    description: "Description courte du projet — clique pour voir tous les détails.",
-    tags: ["À compléter"],
-    competences: ["À compléter"],
-    details: {
-      objectif: "À compléter — décris ici l'objectif principal du projet.",
-      missions: [
-        "À compléter — première mission",
-        "À compléter — deuxième mission",
-      ],
-      resultat: "À compléter — résultat obtenu.",
-    },
-  },
-  {
     title: "Administration et sécurisation d'un parc hybride",
     period: "Alternance",
     context: "Réalisation en milieu professionnel",
