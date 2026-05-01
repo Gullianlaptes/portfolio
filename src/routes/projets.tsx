@@ -88,6 +88,26 @@ const projets = [
       resultat: "À compléter — résultat obtenu.",
     },
   },
+  {
+    title: "Administration et sécurisation d'un parc hybride",
+    period: "Alternance",
+    context: "Réalisation en milieu professionnel",
+    description: "Déploiement d'un poste Zorin OS intégré à un domaine Active Directory Windows, sécurisé par un pare-feu Stormshield et sauvegardé via un serveur UrBackup.",
+    tags: ["Zorin OS", "Active Directory", "SSSD", "Kerberos", "Stormshield", "UrBackup", "GPO"],
+    competences: ["Patrimoine informatique", "Services informatiques", "Incidents & assistance"],
+    details: {
+      objectif: "Déployer un poste de travail sous Zorin OS au sein d'une infrastructure gérée par un serveur Windows (Active Directory), centraliser la gestion des utilisateurs, sécuriser les flux réseau via un pare-feu Stormshield et garantir la protection des données par un serveur UrBackup.",
+      missions: [
+        "Centralisation de l'identité et compatibilité Linux/Windows via SSSD et Kerberos (SSO avec les identifiants du domaine)",
+        "Application du principe du moindre privilège : utilisateur standard, demande de mot de passe admin pour toute modification",
+        "Restriction du shell utilisateur à /bin/false pour interdire les commandes manuelles",
+        "Application des GPO Active Directory (accès machine, complexité et renouvellement des mots de passe via la Default Domain Policy)",
+        "Mise en place du serveur de sauvegarde UrBackup : agent client, sauvegardes automatisées et images disques pour le PCA",
+        "Configuration du pare-feu Stormshield : matrice de flux (LDAP/Kerberos, port 55414 UrBackup) et filtrage URL (blocage paris sportifs et shopping)",
+      ],
+      resultat: "Infrastructure hybride sécurisée et facilement administrable : poste Linux stable à coût de licence nul, identité centralisée via l'AD, données protégées par UrBackup et flux réseau cadrés par Stormshield, avec un niveau de sécurité équivalent aux standards professionnels.",
+    },
+  },
 ];
 
 function ProjetsPage() {
