@@ -64,16 +64,18 @@ export const blocs: Bloc[] = [
     description: "Spécialisé en réseau informatique, j'aborde ce bloc côté infrastructure et services en ligne.",
     skills: ["Hébergement", "DNS", "Sécurité web"],
     details: {
-      intro: "Ma spécialisation BTS SIO est l'option SISR (réseau et systèmes). J'aborde donc ce bloc par l'angle de l'infrastructure qui rend possible la présence en ligne d'une organisation, et j'ai aussi touché au développement web pendant mes stages.",
+      intro: "Ma spécialisation BTS SIO est l'option SISR (réseau et systèmes), donc ce bloc n'est pas au cœur de ma formation. Je n'ai pas eu beaucoup d'occasions de le travailler en cours : j'y ai surtout touché lors de mes anciens stages, et grâce à un intervenant extérieur qui nous a accompagnés pour mettre à jour notre profil LinkedIn et soigner notre identité professionnelle en ligne.",
       activites: [
         "Mise en place et configuration d'un hébergement web",
         "Gestion DNS et nom de domaine",
         "Sécurisation des accès (HTTPS, pare-feu, filtrage)",
         "Notions de développement web côté front",
+          "Mise à jour et optimisation du profil LinkedIn (intervenant extérieur)",
       ],
       realisations: [
         "Stage chez LB Info (2023) : participation au développement de sites web",
         "Création de ce portfolio BTS SIO en ligne",
+          "Refonte de mon profil LinkedIn lors d'un atelier animé par un intervenant extérieur",
       ],
     },
   },
