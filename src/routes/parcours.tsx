@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "../components/SectionHeading";
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, Award } from "lucide-react";
+import { GraduationCap, Briefcase, Award, Building2, MapPin, FlaskConical } from "lucide-react";
 
 export const Route = createFileRoute("/parcours")({
   head: () => ({
@@ -57,6 +57,39 @@ function ParcoursPage() {
   return (
     <div className="min-h-screen px-6 pb-20 pt-28">
       <div className="mx-auto max-w-3xl">
+        {/* Présentation de l'entreprise d'alternance */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16 rounded-2xl border border-border bg-card p-6 md:p-8"
+        >
+          <div className="mb-4 flex items-center gap-3 text-primary">
+            <Building2 className="h-6 w-6" />
+            <span className="font-display text-xs font-semibold uppercase tracking-wider">Mon entreprise d'alternance</span>
+          </div>
+          <h2 className="mb-3 font-display text-2xl font-bold text-foreground md:text-3xl">ALS France</h2>
+          <div className="mb-5 flex flex-wrap gap-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <MapPin className="h-4 w-4 text-primary" />
+              Saint-Quentin-Fallavier (38)
+            </span>
+            <span className="flex items-center gap-1.5">
+              <FlaskConical className="h-4 w-4 text-primary" />
+              Laboratoire d'analyses
+            </span>
+          </div>
+          <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+            ALS France est un laboratoire qui fait partie du groupe mondial ALS, leader dans les contrôles et les analyses. L'entreprise a été créée en 1999 et compte une soixantaine de personnes sur le site de Saint-Quentin-Fallavier.
+          </p>
+          <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+            <span className="font-semibold text-foreground">Activité principale :</span> ALS France réalise des analyses dans plusieurs domaines, principalement l'environnement (analyses de l'eau, des sols, de l'air, amiante, PFAS, microplastiques), mais aussi l'alimentation, les produits cosmétiques et la santé en intérieur (qualité de l'air dans les bâtiments, salles propres).
+          </p>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Concrètement, des clients (entreprises, collectivités, industriels) envoient des échantillons au laboratoire pour les faire analyser, et ALS leur fournit ensuite des résultats fiables et certifiés (accréditation COFRAC).
+          </p>
+        </motion.section>
+
         <SectionHeading
           title="Mon parcours"
           subtitle="Formation, stages et expériences qui ont construit mes compétences en informatique."
