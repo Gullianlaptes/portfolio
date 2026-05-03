@@ -80,7 +80,7 @@ function ParcoursPage() {
             </span>
           </div>
           <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-            ALS France est un laboratoire qui fait partie du groupe mondial ALS, leader dans les contrôles et les analyses. L'entreprise a été créée en 1999 et compte une soixantaine de personnes sur le site de Saint-Quentin-Fallavier.
+             ALS France est un laboratoire qui fait partie du groupe mondial ALS, leader dans les contrôles et les analyses. L'entreprise a été créée en 1999 et compte plus d'une centaine de personnes sur le site de Saint-Quentin-Fallavier.
           </p>
           <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
             <span className="font-semibold text-foreground">Activité principale :</span> ALS France réalise des analyses dans plusieurs domaines, principalement l'environnement (analyses de l'eau, des sols, de l'air, amiante, PFAS, microplastiques), mais aussi l'alimentation, les produits cosmétiques et la santé en intérieur (qualité de l'air dans les bâtiments, salles propres).
