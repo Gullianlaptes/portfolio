@@ -18,21 +18,22 @@ export const Route = createFileRoute("/projets")({
 
 const projets = [
   {
-    title: "Creation d'un serveur de sauvegarde de doné et utilisateur",
+    title: "Création d'un serveur de sauvegarde de données",
     period: "Sept 2024 — Déc 2024",
     context: "Réalisation en formation",
-    description: "Développement d'un server de sauvegarde de donées le service informatique. Mise en place d'un système de suivi et de priorisation des demandes.",
-    tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+    description: "Mise en place d'un serveur Windows Server 2022 avec l'application UrBackup pour sauvegarder les partitions et les images d'autres machines du parc.",
+    tags: ["Windows Server 2022", "UrBackup", "Sauvegarde", "Images disque"],
     competences: ["Patrimoine informatique", "Incidents & assistance"],
     details: {
-      objectif: "Mettre en place un serveur permettant de sauvegarder automatiquement les données et les profils utilisateurs.",
+      objectif: "Mettre en place un serveur Windows Server 2022 utilisant UrBackup pour sauvegarder automatiquement les partitions et les images disques d'autres machines.",
       missions: [
-        "Analyse des besoins de sauvegarde",
-        "Installation et configuration du serveur",
-        "Mise en place de scripts de sauvegarde automatisés",
-        "Tests de restauration",
+        "Installation et configuration de Windows Server 2022",
+        "Installation et paramétrage de l'application UrBackup (serveur)",
+        "Déploiement de l'agent UrBackup sur les machines clientes",
+        "Configuration des sauvegardes de partitions et des images disques complètes",
+        "Tests de restauration des partitions et des images",
       ],
-      resultat: "Système de sauvegarde fonctionnel et documenté, prêt à être déployé.",
+      resultat: "Serveur de sauvegarde opérationnel sous Windows Server 2022 avec UrBackup, capable de sauvegarder les partitions et les images disques des autres machines pour assurer la continuité d'activité.",
     },
   },
   {
