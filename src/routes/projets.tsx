@@ -103,7 +103,7 @@ function ProjetsPage() {
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           title="Réalisations professionnelles"
-          subtitle="Projets réalisés en formation et en milieu professionnel dans le cadre du BTS SIO."
+          subtitle="Projets et missions réalisés en formation et en milieu professionnel dans le cadre du BTS SIO."
         />
         <div className="space-y-6">
           {projets.map((projet, i) => {
